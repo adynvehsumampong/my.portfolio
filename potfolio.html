@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adyn Veh | My Portfolio</title>
+
+<style>
+    .floating-stickers {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    gap: 18px;
+    font-size: 35px;
+    z-index: 1000;
+    opacity: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf7;
+    color: #333;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: #f7bfc9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #c13d70;
+}
+
+/* HOME */
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 8%;
+    background: #fff3ed;
+    gap: 30px;
+}
+
+.home h1 {
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+
+.home h2 {
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.home span {
+    color: #d94d80;
+}
+
+.home p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.home a {
+    text-decoration: none;
+    color: #c13d70;
+    font-weight: bold;
+}
+
+.profile {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #f5c3cc;
+    box-shadow: 10px 10px #e7aab8;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ABOUT */
+.about {
+    background: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #ffe7d2;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #e8c7b4;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #b83f70;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* SKILLS */
+.skills {
+    background: #fff2f4;
+}
+
+.skills .card {
+    background: #f9c5d0;
+}
+
+/* PROJECTS */
+.projects {
+    background: white;
+}
+
+/* CONTACT */
+.contact {
+    background: #fff0e8;
+}
+
+.contact p {
+    margin: 12px 0;
+}
+
+.contact a {
+    color: #c13d70;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #211c20;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .profile {
+        width: 210px;
+        height: 240px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">&lt;VEH/&gt;</div>
+    
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<!-- HOME -->
+<div class="home" id="home">
+
+    <div>
+        <h1>Hi, I'm Adyn Veh Sumampong!</h1>
+        
+
+        <h2>Aspiring <span>Frontend Developer</span></h2>
+
+        <p>Your vision, my creativity and code.</p>
+
+        <a href="#projects">View My Work →</a>
+    </div>
+
+    <img src="gwapa.jpg"
+         alt="My Profile Picture"
+         class="profile">
+
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p class="description">
+        Hello! I'm Adyn Veh Sumampong, an aspiring
+        frontend developer who loves creating clean,
+        simple and user-friendly websites.
+
+        I am passionate about technology, creativity
+        and learning new things. My goal is to improve
+        my coding skills and become a successful
+        web developer in the future.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Frontend Development</h3>
+            <p>Creating websites using HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h3>Creative Design</h3>
+            <p>Designing simple, beautiful and responsive websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Problem Solving</h3>
+            <p>Learning new techniques and finding solutions through coding.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+
+    <h2>What Can I Do?</h2>
+
+    <p class="description">
+        I create simple, responsive and visually appealing
+        websites that provide a good user experience.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Building the structure and content of websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Designing layouts, colors and beautiful styles.</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Adding interactive features to websites.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+
+    <h2>My Projects</h2>
+
+    <p class="description">
+        Here are some of my personal and school projects.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>A website that introduces myself and my skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>Birthday Website</h3>
+            <p>A creative and interactive birthday letter website.</p>
+        </div>
+
+        <div class="card">
+            <h3>School Projects</h3>
+            <p>Different activities and projects created during my studies.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>Let's connect and create something amazing!</p>
+
+    <p>Email:
+        <a href="mailto:your-email@gmail.com">
+            dynveah@gmail.com
+        </a>
+    </p>
+
+    <p>Facebook: Adyn Veh Sumampong</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Adyn Veh Sumampong | My Portfolio</p>
+    <p>Designed with love and creativity 💗</p>
+</footer>
+
+</body>
+</html>
+<div class="floating-stickers">
+    <span>✨</span>
+    <span>🎀</span>
+</div>
+
